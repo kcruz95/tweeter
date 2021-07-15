@@ -9,6 +9,7 @@ nav {
   padding-right: 1.5em;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 nav .tweeter {

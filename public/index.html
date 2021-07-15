@@ -28,8 +28,11 @@
     <!-- Nav Bar CSS -->
     <link rel="stylesheet" href="styles/nav.css" type="text/css" />
 
-    <!-- Tweet Form CSS -->
+    <!-- New Tweet Form CSS -->
     <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
+
+    <!-- Posted Tweets Form CSS -->
+    <link rel="stylesheet" href="styles/posted-tweets.css" type="text/css" />
 
     <!-- Icon CSS -->
     <!-- cdnjs font awesome -->
@@ -49,7 +52,10 @@
 
     <!-- New Tweet Form JS -->
     <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
-    
+
+    <!-- timego.js library (for time-stamping tweets) JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   </head>
 
   <body>
@@ -66,7 +72,7 @@
       </div>
     </nav>
 
-    <header>
+    <header class="body-header">
       <div>
           <img src="/images/profile-hex.png"> 
       </div>
@@ -79,18 +85,18 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form>
+        <form method="POST" action="/tweets/">
           <label for="tweet-text">What are you humming about?</label>
+          <br>
           <textarea name="text" id="tweet-text"></textarea>
-          <div>
+          <div class="tweet-button">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
 
-      <section class="tweets">
-      </section>
+      <section class="tweets"></section>
     </main>
     
   </body>

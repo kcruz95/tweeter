@@ -1,4 +1,4 @@
-header {
+.body-header {
   /* header where icon and name display are */
   align-items: center;
   /* background-color: #08c4d1; */
@@ -12,7 +12,7 @@ header {
   width: 100%;
 }
 
-header div {
+.body-header div {
   /* hexagon & 'your name' display */
   align-items: flex-end;
   display: flex;
@@ -23,6 +23,6 @@ header div {
   width: 180px;
 }
 
-header div img {
+.body-header div img {
   width: 100%;
 }
