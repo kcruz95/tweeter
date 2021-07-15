@@ -1,0 +1,28 @@
+header {
+  /* header where icon and name display are */
+  align-items: center;
+  /* background-color: #08c4d1; */
+  background-color: #e6ad00;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: flex-end;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+header div {
+  /* hexagon & 'your name' display */
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+  width: 180px;
+}
+
+header div img {
+  width: 100%;
+}

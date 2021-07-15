@@ -1,0 +1,32 @@
+nav {
+  /* Blue Header */
+  background-color: #4056A1;
+  color: #FFFF;
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  position: fixed;
+  width: 100%;
+}
+
+nav .tweeter {
+  /* "TWEETER" Text */
+  
+  font-family: 'Bungee', 'cursive';
+}
+
+nav i {
+  /* Double Arrow Down */
+  color: crimson;
+  /* align-self: center; */
+}
+
+nav div {
+  /* 'Write a new tweet' */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -15,11 +15,31 @@ html {
  */
 
 body {
+  /* properties of the body text */
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ main {
+  /* body of the site where tweets will be posted */
+  align-items: center;
+  background-color: burlywood;
+  color: maroon;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 90%;
+ }
+
+ .tweeter {
+  /* centred name of the tweeter */
+ align-items: center;
+ display: flex;
+ justify-content: center;
+}

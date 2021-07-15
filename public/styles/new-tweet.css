@@ -1,0 +1,40 @@
+.new_tweet {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+}
+
+/* section .new_tweet {
+  align-items: center;
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+} */
+
+button {
+  background-color: wheat;
+  border-radius: 10px;
+  color: maroon;
+  font-family: 'Bungee', cursive;
+}
+
+.counter {
+  /* character counter */
+  float: right;
+  font-family: 'Bungee', cursive;
+}
+
+.noPadding {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0, 0;
+}
+
+textarea#tweet-text {
+  background-color: inherit;
+  border: 0;
+  border-bottom: wheat solid;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+}
