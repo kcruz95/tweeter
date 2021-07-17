@@ -1,7 +1,6 @@
 .body-header {
   /* header where icon and name display are */
   align-items: center;
-  /* background-color: #08c4d1; */
   background-color: #e6ad00;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   display: flex;
