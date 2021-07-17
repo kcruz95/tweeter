@@ -43,3 +43,33 @@ body {
  display: flex;
  justify-content: center;
 }
+
+/* breakpoint for desktop format vs mobile */
+
+@media only screen and (min-width: 1024px) {
+  body {
+      display: flex;
+      flex-direction: row;
+  }
+
+  main {
+    width: 50%;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    margin-top: 30%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+  }
+
+  header.body-header {
+    min-width: 20%;
+    max-width: 40%;
+    max-height: 30%;
+    margin: 17% 1% 10% 3%;
+  }
+    
+}
