@@ -83,15 +83,31 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <div>
+        <div id="error-null" class="error">
+          <i class="fas fa-exclamation-triangle"></i>
+          A tweet should be more than nothing
+          Tweet, tweet!
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div id="error-over" class="error">
+          <i class="fas fa-exclamation-triangle"></i>
+          Keep it 140 or less!
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+      </div>
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets/">
-          <label for="tweet-text">What are you humming about?</label>
-          <br>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div class="tweet-button">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+        <form method="POST" action="/tweets">
+          <div id="tweet-post">
+            <h2>Something on your mind? Tweet, tweet!</h2>
+            <label for="tweet-text">What are you humming about?</label>
+            <br>
+            <textarea name="text" id="tweet-text"></textarea>
+        
+            <div class="tweet-button">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
           </div>
         </form>
       </section>
