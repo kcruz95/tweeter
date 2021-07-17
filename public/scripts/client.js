@@ -4,44 +4,17 @@
 * Reminder: Use (and do all your DOM work in) jQuery's document ready function
 */
 
-// const data = [
-//   {
-//     "user": {
-//       "name": "Newton",
-//       "avatars": "https://i.imgur.com/73hZDYK.png"
-//       ,
-//       "handle": "@SirIsaac"
-//     },
-//     "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//     "created_at": 1461116232227
-//   },
-//   {
-//     "user": {
-//       "name": "Descartes",
-//       "avatars": "https://i.imgur.com/nlhLi3I.png",
-//       "handle": "@rd" },
-//     "content": {
-//       "text": "Je pense , donc je suis"
-//     },
-//     "created_at": 1461113959088
-//   }
-// ]
-
 const renderTweets = tweets => {
-  // loops through tweets
-  // calls createTweetElement for each tweet
-  // takes return value and appends it to the tweets container
-  for(let tweet of tweets) {
+  for (let tweet of tweets) {
     const $tweet = createTweetElement(tweet);
     $('.tweets').prepend($tweet);
-  }};
+  }
+};
   
-  const createTweetElement = tweet => {
-    
-    const $tweet = $(`<article class="tweet">
-    <header id="posted-tweets-header">
+const createTweetElement = tweet => {
+
+  const $tweet = $(`<article class="tweet">
+  <header id="posted-tweets-header">
     <div class="tweet-prof">
     <img id="tweet-userProf" src="${tweet.user.avatars}" alt="user-avatar">
     <span id="tweet-user">${tweet.user.name}</span>
@@ -65,23 +38,19 @@ const renderTweets = tweets => {
     </span>
     </footer>
     </article>`);
-    return $tweet;
-  }
+  return $tweet;
+};
 
-  $(document).ready(function() {
-    // renderTweets(`${}`);
-
-    $('#error-null').hide();
-    $('#error-over').hide();
-  // Load tweets to the body using AJAX to POST data
+$(document).ready(function() {
+  $('#error-null').hide();
+  $('#error-over').hide();
 
   // submit a new tweet
   $('form').submit(function(event) {
     console.log('event', event);
-    // stops HTML from running a POST request and reloading the whole page
     event.preventDefault();
-
-  // keep text to <=140
+      
+    // keep text to <=140
     if ($('textarea').val().length === 0) {
       $('#error-over').hide();
       return $('#error-null').slideDown(500);
@@ -90,18 +59,19 @@ const renderTweets = tweets => {
       $('#error-null').hide();
       return $('#error-over').slideDown(500);
     }
-
+      
+    // Load tweets to the body using AJAX to POST data
     $.ajax({
       method: "POST",
       url: "/tweets",
       data: $('form').serialize()
     }).then(loadtweets);
-  })
+  });
   const loadtweets = function() {
     $.ajax("/tweets", { method: "GET" })
-    .then(renderTweets);
+      .then(renderTweets);
   };
-  loadtweets()
+  loadtweets();
 });
 
 $('.fa-angle-double-down').on('click', () => {

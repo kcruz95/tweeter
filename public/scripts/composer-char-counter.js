@@ -10,8 +10,6 @@ $(document).ready(function() {
       $(".counter").removeClass("negativeValues");
     } else {
       $(".counter").addClass("negativeValues");
-      
-      // $(".counter").html(`<a class="negativeValues">${140 - chars.length}</a>`);
     }
   });
 });

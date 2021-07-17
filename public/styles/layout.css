@@ -45,8 +45,7 @@ body {
  justify-content: center;
 }
 
-/* breakpoint for desktop format vs mobile */
-
+/* defining breakpoints for desktop format vs mobile */
 @media only screen and (min-width: 1024px) {
   body {
       display: flex;

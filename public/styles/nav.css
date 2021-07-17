@@ -14,7 +14,6 @@ nav {
 
 nav .tweeter {
   /* "TWEETER" Text */
-  
   font-family: 'Bungee', 'cursive';
 }
 
@@ -24,9 +23,10 @@ nav .tweeter {
   font-family: 'Bungee', cursive;
 }
 
+/* animate the Double Arrow Down */
 @keyframes bounce {
-  from { top: 65px; }
-  to { top: 72px; }
+  from { top: 68px; }
+  to { top: 75px; }
 }
 
 nav i {

@@ -4,11 +4,7 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
-
-
     <!-- CSS -->
-
-
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -38,11 +34,7 @@
     <!-- cdnjs font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-
     <!-- JS -->
-
-
     
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -88,27 +80,35 @@
       <div>
         <div id="error-null" class="error">
           <i class="fas fa-exclamation-triangle"></i>
-          A tweet should be more than nothing!
-          Tweet, tweet!
+            A tweet should be more than nothing!
+            Tweet, tweet!
           <i class="fas fa-exclamation-triangle"></i>
         </div>
         <div id="error-over" class="error">
           <i class="fas fa-exclamation-triangle"></i>
-          Keep it 140 or less!
+            Keep it 140 or less!
           <i class="fas fa-exclamation-triangle"></i>
         </div>
       </div>
       <section class="new-tweet">
         <form method="POST" action="/tweets">
           <div id="tweet-post">
-            <h2>Something on your mind? Tweet, tweet!</h2>
-            <label for="tweet-text">What are you humming about?</label>
+            <h2>
+              Something on your mind? Tweet, tweet!
+            </h2>
+            <label for="tweet-text">
+              What are you humming about?
+            </label>
             <br>
             <textarea name="text" id="tweet-text"></textarea>
         
             <div>
-              <button type="submit"class="tweet-button">Tweet</button>
-              <output name="counter" class="counter" for="tweet-text">140</output>
+              <button type="submit"class="tweet-button">
+                Tweet
+              </button>
+              <output name="counter" class="counter" for="tweet-text">
+                140
+              </output>
             </div>
           </div>
         </form>
