@@ -6,9 +6,12 @@ $(document).ready(function() {
 
     // sets the colour
     if (characters.length < 141) {
-    $(".counter").html(`${140 - characters.length}`);
+      $(".counter").html(`${140 - characters.length}`);
+      $(".counter").removeClass("negativeValues");
     } else {
-      $(".counter").html(`<a class="negativeValues">${140 - chars.length}</a>`);
+      $(".counter").addClass("negativeValues");
+      
+      // $(".counter").html(`<a class="negativeValues">${140 - chars.length}</a>`);
     }
   });
 });

@@ -18,9 +18,23 @@ nav .tweeter {
   font-family: 'Bungee', 'cursive';
 }
 
+.tweet-nav-button {
+  background-color: #4056A1;
+  border-radius: 10px;
+  font-family: 'Bungee', cursive;
+}
+
+@keyframes bounce {
+  from { top: 65px; }
+  to { top: 72px; }
+}
+
 nav i {
   /* Double Arrow Down */
   color: crimson;
+  position: absolute;
+  right: 7rem;
+  animation: bounce 1s infinite;
   /* align-self: center; */
 }
 

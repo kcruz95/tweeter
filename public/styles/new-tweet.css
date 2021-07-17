@@ -12,18 +12,15 @@
   width: 80%;
 }
 
-/* section .new_tweet {
-  align-items: center;
-  background-color: burlywood;
-  display: flex;
-  justify-content: space-between;
-} */
-
-button {
+.tweet-button {
   background-color: wheat;
   border-radius: 10px;
   color: maroon;
   font-family: 'Bungee', cursive;
+}
+
+.negativeValues {
+  color: red;
 }
 
 .counter {
@@ -45,9 +42,9 @@ form {
 
 textarea#tweet-text {
   background-color: inherit;
-  border: none;
-  border-bottom: wheat solid;
+  border: 4px wheat solid;
+  border-radius: 10px;
   font-family: 'Source Sans Pro', sans-serif;
   resize: none;
-  width: 100%;
+  width: 80%;
 }

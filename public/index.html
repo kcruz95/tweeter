@@ -68,17 +68,19 @@
             Write
           </strong> a new tweet
         </span>
-        <i class="fas fa-angle-double-down"></i>
+        <!-- <button class="tweet-nav-button"> -->
+          <i class="fas fa-angle-double-down"></i>
+        <!-- </button> -->
       </div>
     </nav>
 
     <header class="body-header">
       <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <div>
-          <h2>Your Name</h2>
-      </div>
+          <img id="hex-prof" src="/images/profile-hex.png"> 
+        </div>
+        <div>
+          <h2 id="hex-name">Alejandra Córdova</h2>
+        </div>
   </header>
 
     <!-- Page-specific (main) content here -->
@@ -86,7 +88,7 @@
       <div>
         <div id="error-null" class="error">
           <i class="fas fa-exclamation-triangle"></i>
-          A tweet should be more than nothing
+          A tweet should be more than nothing!
           Tweet, tweet!
           <i class="fas fa-exclamation-triangle"></i>
         </div>
@@ -104,8 +106,8 @@
             <br>
             <textarea name="text" id="tweet-text"></textarea>
         
-            <div class="tweet-button">
-              <button type="submit">Tweet</button>
+            <div>
+              <button type="submit"class="tweet-button">Tweet</button>
               <output name="counter" class="counter" for="tweet-text">140</output>
             </div>
           </div>

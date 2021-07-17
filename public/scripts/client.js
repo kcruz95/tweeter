@@ -103,3 +103,7 @@ const renderTweets = tweets => {
   };
   loadtweets()
 });
+
+$('.fa-angle-double-down').on('click', () => {
+  $('.new-tweet').slideToggle('slow');
+});

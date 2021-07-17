@@ -17,7 +17,8 @@ html {
 body {
   /* properties of the body text */
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: burlywood;
+  border-radius: 10px;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -69,7 +70,10 @@ body {
     min-width: 20%;
     max-width: 40%;
     max-height: 30%;
-    margin: 17% 1% 10% 3%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
     
 }
